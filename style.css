@@ -134,7 +134,7 @@ section #content{
     background-color: #C0C0C0;
 }
 #Instructors{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/JPG/no.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("no.png");
     column-gap: 3%;
 }
 #Instructors h2{
