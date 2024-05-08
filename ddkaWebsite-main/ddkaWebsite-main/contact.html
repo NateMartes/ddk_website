@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Dual Dragon Karate</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html"><img src="../images/JPG/no.png" type="image/png" alt="Dual Dragon Karate Logo" width="32px"/></a></li>
+            <!-- TODO : Implement javascript to get ids of elements from index.html -->
+            <li><a href="">About Us</a></li>
+            <li><a href="">Classes</a></li>
+            <li><a href="">Instructors</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="hoursAndMap">
+        <div id="hours">
+        <h2 id="hoursHeader">Hours Of Operation</h2>
+        <table>
+            <tr>
+                <td>Monday</td>
+                <td>5:30 PM - 8:00 PM</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>5:30 PM - 8:00 PM</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>5:30 PM - 8:00 PM</td>
+            </tr>
+        </table>
+        <h2 id="locationHeader">Address</h2>
+        <p>84 South Main St, Wilkes Barre, PA, 18711</p>
+        </div>
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2999.9796999233427!2d-75.8849169!3d41.24400010000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c51a89b5fe6387%3A0xb321ec1711fadef1!2sDowntown%20Dojo%20Karate%20Academy!5e0!3m2!1sen!2sus!4v1715030425664!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <div class="emailUs">
+        <div id="content">
+            <h2>Email Us!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ab quisquam modi asperiores id quis, esse eveniet ut ipsa unde exercitationem itaque. Eum sint pariatur illo quasi qui facere suscipit?</p>
+        </div>
+        <div id="emailForm">
+        <form>
+            <table>
+                <tr>
+                    <td><label>Name :</label></td>
+                    <td><input type="text" id="name"></td>
+                </tr>
+                <tr>
+                    <td><label>Email :</label></td>
+                    <td><input type="text" id="email" required></td>
+                </tr>
+                <tr>
+                    <td><label>Moblie :</label></td>
+                    <td><input type="text" id="phoneNumber"></td>
+                </tr>
+            </table>
+            <div>
+                <textarea type="textarea" id="emailContents" rows="10" cols="25" ></textarea>
+            </div>
+            <input type="submit" id="sendBtn"></input>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
