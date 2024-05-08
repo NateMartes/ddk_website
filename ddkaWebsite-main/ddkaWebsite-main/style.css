@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 body {
     margin: 0;
     background-color: #C0C0C0;
@@ -24,6 +23,7 @@ p {
     position: -webkit-sticky;
     position: sticky;
     top: 0; 
+    z-index: 1000;
 }
 .navbar ul{
     list-style-type: none;
@@ -56,7 +56,7 @@ p {
 
 /* main div */
 .mainDiv{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/AVIF/StudentLineUp.avif");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/AVIF/StudentLineUp.avif");
     background-size: cover;
     background-color: #C0C0C0;
     background-repeat: no-repeat;
@@ -65,16 +65,15 @@ p {
     max-width: 100%;
     height: 80vh;
     display: flex;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
 }
 .mainDiv p{
     font-family: "Bebas Neue", 'Arial Narrow', sans-serif;
     color: #FFFFFF;
     font-size: 70px;
-    margin: 0px;
-    padding-left: 10px;
-    display: absolute;
+    margin: 0px;   
     height: fit-content;
 }
 
@@ -105,12 +104,17 @@ section img{
     width: 60%;
     background-color: #C0C0C0;
     margin: 1%;
-    float: right;
 }
-section p{
+section p, section h3{
     max-width: 100%;
     margin: 10px;
     flex-wrap: wrap;
+}
+section h3{
+    font-family: "Bebas Neue",'Arial Narrow', sans-serif ;
+    font-weight: 400;
+    text-decoration: underline;
+    text-underline-offset: 10px;
 }
 section ul{
     font-family: "Roboto Condensed", 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -130,7 +134,11 @@ section #content{
     background-color: #C0C0C0;
 }
 #Instructors{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/JPG/no.png");
     column-gap: 3%;
+}
+#Instructors h2{
+    color: #FFFFFF;
 }
 #Instructors div{
     display: flex;
@@ -144,19 +152,23 @@ section #content{
 }
 #Instructors p{
     height: 300px;
+    color:#FFFFFF;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
 }
 #Instructors #name{
     text-decoration: underline;
     text-underline-offset: 10px;
     font-family: "Bebas Neue",'Arial Narrow', sans-serif ;
     font-weight: 400;
+    color:#FFFFFF
 }
 footer{
     background-color: #C0C0C0;
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 3%;
+    column-gap: 1%;
 }
 footer p, footer a{
     font-family: "Roboto Condensed", 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -183,6 +195,7 @@ footer a:hover{
     background-color: #0062CA;
     border-radius: 20px;
     padding: 20px;
+    box-shadow: 3px 3px 5px; 
 }
 .hoursAndMap div{
     width: 65%;
@@ -210,6 +223,19 @@ footer a:hover{
     padding-left: 20px;
     margin: 0;
 }
+.hoursAndMap #icons{
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    margin-left: 20px;
+}
+.hoursAndMap #icons a{
+    text-decoration: none;
+    color: #000000;
+}
+.hoursAndMap #icons a::before, .hoursAndMap #icons a::after{
+    color: #000000;
+}
 table{
     padding-left: 20px;
 }
@@ -222,6 +248,7 @@ table tr{
     background-color: #0062CA;
     border-radius: 20px;
     padding: 20px;
+    box-shadow: 3px 3px 5px; 
 }
 .emailUs #content h2{
     font-family: "Bebas Neue",'Arial Narrow', sans-serif ;
@@ -242,6 +269,7 @@ table tr{
     font-family: "Roboto Condensed", 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .emailUs #emailForm input{
+    margin: 10px;
     margin-left: 20px;
     font-size: 30px;
     font-family: "Roboto Condensed", 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -252,6 +280,35 @@ table tr{
     font-size: 30px;
     font-family: "Roboto Condensed", 'Helvetica Neue', Helvetica, Arial, sans-serif;
     resize: none;
+    margin: 10px;
+    margin-left: 20px;
+}
+.emailUs #emailForm #sendBtn{
+    margin: 10px;
+    margin-left: 20px;
+    width: 100px;
+    height: 50px;
+    font-family: "Roboto Condensed", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    border-radius: 20px;
+}
+.emailUs #emailForm #sendBtn:hover{
+    background-color: #FFFFFF;
+}
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+}
+#imageGallery{
+    justify-content: center;
+    align-items: center;
 }
 @media screen and (max-width:1024px){
     .mainDiv p{
@@ -261,7 +318,7 @@ table tr{
         width: 100%;
         flex-direction: column;
     }
-    section p{
+    section p, section h3{
         display: block;
         max-width: 100%;
         overflow: auto;
@@ -281,6 +338,9 @@ table tr{
     }
     footer a, footer p{
         font-size: 13px;
+    }
+    footer #logo{
+        display: none;
     }
     #classes #content{
         flex-direction: column-reverse;
@@ -303,13 +363,61 @@ table tr{
     #hours h2{
         margin: 0px;
     }
+    #hours p{
+        margin: 0px;
+    }
+    #hours table tr, .hoursAndMap #hours p{
+        font-size: 25px;
+    }
     .hoursAndMap table, .hoursAndMap p{
         padding: 0;
         margin-bottom: 10px;
+    }
+    .hoursAndMap table{
+        margin: 10px;
+        width: 70%;
+        align-self: center;
+    }
+    .hoursAndMap #phoneNum{
+        text-align: center; 
+        padding: 20px;
+    }
+    .hoursAndMap #icons{
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .hoursAndMap #locationHeader{
+        margin-bottom: 20px;
     }
     .hoursAndMap iframe{
         max-width: 90%;
         height: 350px;
         margin-bottom: 10px;
     }
+    .emailUs{
+        margin: 10px;
+    }
+    .emailUs #emailForm label, .emailUs #emailForm input{
+        font-size: 25px;
+    }
+    .emailUs #emailForm input{
+        width: 80%;
+    }
+    .emailUs #emailForm #emailContents{
+        width: 90%;
+    }
 }
+@media screen and (max-width:500px){
+    .hoursAndMap table{
+        width: 100%; 
+    }
+}
+
+@media(prefers-reduced-motion) {
+    .hidden{
+        transition: none;
+    }
+}
+
