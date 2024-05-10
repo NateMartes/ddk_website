@@ -282,6 +282,8 @@ table tr{
     font-size: 30px;
     border-radius: 20px;
     background-color: #C0C0C0;
+    text-align: center;
+    color: #000000;
 }
 .emailUs #emailForm #sendBtn:hover{
     background-color: #FFFFFF;
