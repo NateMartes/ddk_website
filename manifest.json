@@ -1,0 +1,12 @@
+{
+    "name": "Dual Dragon Karate",
+    "short_name": "DualDragonKarate",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#0062CA",
+    "theme_color":"#0062CA",
+    "orientation":"portrait-primary",
+    "icons":[
+        
+    ]
+}
