@@ -7,6 +7,10 @@
     "theme_color":"#0062CA",
     "orientation":"portrait-primary",
     "icons":[
-        
+        {
+            "src": "no.png",
+            "sizes": "512x512",
+            "type":"image/png"
+        }
     ]
 }
