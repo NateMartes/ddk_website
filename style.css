@@ -133,6 +133,10 @@ section #content{
 }
 #Instructors{
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("no.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
     column-gap: 3%;
 }
 #Instructors h2{
@@ -292,7 +296,8 @@ table tr{
     height: 50px;
     font-family: "Roboto Condensed", 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 30px;
-    border: 2px solid;
+    border: 2px solid  black;
+    color: black;
     border-radius: 5px;
     background-color: #C0C0C0;
     text-align: center;
@@ -301,6 +306,9 @@ table tr{
 .emailUs #emailForm #sendBtn:hover{
     background-color: #FFFFFF;
     cursor: pointer;
+}
+.emailUs #emailForm #sendBtn::after{
+    background-color: #C0C0C0;
 }
 .hidden{
     opacity: 0;

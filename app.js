@@ -7,6 +7,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 });
 const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((e1) => console.log(e1));
 hiddenElements.forEach((el) => observer.observe(el));
 
 /* scroll to ids */
