@@ -3,7 +3,6 @@ body {
     margin: 0;
 }
 main {
-    margin: 0;
     font-size: 25px;
     font-family: "Roboto Condensed", 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -132,9 +131,6 @@ section #content{
     background-color: #0062CA;
     color: #FFFFFF;
 }
-#classes{
-    background-color: #C0C0C0;
-}
 #Instructors{
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("no.png");
     column-gap: 3%;
@@ -170,6 +166,7 @@ footer{
     justify-content: center;
     align-items: center;
     column-gap: 1%;
+    height: 55px;
 }
 footer p, footer a{
     font-family: "Roboto Condensed", 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -220,13 +217,18 @@ footer a:hover{
     flex-direction: row;
     column-gap: 15px;
     margin-left: 20px;
+    transition: color 0.2s;
 }
-.hoursAndMap #icons a{
-    text-decoration: none;
-    color: #000000;
+.icon {
+  font-size: 48px;
+  color: #FFFFFF;
+  transition: color 0.2s;
 }
 .hoursAndMap #icons a::before, .hoursAndMap #icons a::after{
-    color: #000000;
+    color: #FFFFFF;
+}
+.hoursAndMap #icons .icon:hover{
+    color: #097bf4;
 }
 table{
     padding-left: 20px;
@@ -257,12 +259,20 @@ table tr{
     font-size: 30px;
     font-family: "Roboto Condensed", 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+.errorMsgs{
+    margin-left: 20px;
+}
+.errorMsgs td{
+    padding-left: 20px;
+}
 .emailUs #emailForm input{
     margin: 10px;
     margin-left: 20px;
     font-size: 30px;
     font-family: "Roboto Condensed", 'Helvetica Neue', Helvetica, Arial, sans-serif;
     width: 500px;
+    border: 2px solid;
+    border-radius: 5px;
 }
 .emailUs #emailForm #emailContents{
     width: 800px;
@@ -272,6 +282,8 @@ table tr{
     resize: none;
     margin: 10px;
     margin-left: 20px;
+    border: 2px solid;
+    border-radius: 5px;
 }
 .emailUs #emailForm #sendBtn{
     margin: 10px;
@@ -280,13 +292,15 @@ table tr{
     height: 50px;
     font-family: "Roboto Condensed", 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 30px;
-    border-radius: 20px;
+    border: 2px solid;
+    border-radius: 5px;
     background-color: #C0C0C0;
     text-align: center;
-    color: #000000;
+    transition: background-color 0.2s;
 }
 .emailUs #emailForm #sendBtn:hover{
     background-color: #FFFFFF;
+    cursor: pointer;
 }
 .hidden{
     opacity: 0;
@@ -407,18 +421,24 @@ table tr{
     .hoursAndMap table{
         width: 100%; 
     }
+    .emailUs #emailForm{
+        padding: 0px;
+    }
 }
 @media screen and (max-width:424px){
     .navbar #instructorsNav{
         display: none;
     }
 }
-@media screen and (max-width:717px){
+@media screen and (max-width:750px){
     footer a, footer p{
         font-size: 13px;
     }
     footer #logo{
         display: none;
+    }
+    .icon{
+        font-size: 32px;
     }
 }   
 @media(prefers-reduced-motion) {

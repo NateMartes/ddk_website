@@ -19,10 +19,10 @@
         <nav class="navbar">
             <ul>
                 <li><a href="index.html"><img src="no.png" type="image/png" alt="Dual Dragon Karate Logo" width="32px" loading="lazy"/></a></li>
-                <li id="aboutUsNav"><a href="#aboutUs">About Us</a></li>
-                <li id="classesNav"><a href="#classes">Classes</a></li>
-                <li id="instructorsNav"><a href="#Instructors">Instructors</a></li>
-                <li id="contactNav"><a href="contact.html">Contact</a></li>
+                <li><a id="aboutUsNav" href="#aboutUs" onclick="scrollAnimation(event, this)">About Us</a></li>
+                <li><a id="classesNav" href="#classes" onclick="scrollAnimation(event, this)">Classes</a></li>
+                <li><a id="instructorsNav" href="#Instructors" onclick="scrollAnimation(event, this)">Instructors</a></li>
+                <li><a id="contactNav" href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <div class="mainDiv">
@@ -31,7 +31,7 @@
             </div>
         </div>
         <section id="aboutUs">
-            <div id="header" class="hidden">
+            <div id="header">
                 <h2>About Us</h2>
             </div>
             <div id="content" class="hidden">
@@ -40,7 +40,7 @@
                     perform technical martial arts techniques, learn discipline, and exercise all while having fun!</p>
             </div>
         </section>
-        <section  id="classes">
+        <section  id="classes" style="background-color: #C0C0C0;">
             <div id="header">
                 <h2 class="hidden">Classes</h2>
             </div>
@@ -90,12 +90,12 @@
         </section>
     </main>
     <footer>
-        <a id="logo" href="index.html"><img src="no.png" type="image/png" alt="Dual Dragon Karate Logo" width="32px" loading="lazy"/></a>
-        <p>570-XXX-XXXX</p>
+        <a id="logo" href="index.html" style="position: absolute; left: 0;"><img src="no.png" type="image/png" alt="Dual Dragon Karate Logo" width="32px" loading="lazy"/></a>
+        <p>610-223-3846</p>
         <a href="contact.html">Email Us!</a>
         <a href="https://maps.app.goo.gl/mYF6eyhSjRNuGJE68" target="_blank">84 South Main St<span style="display: block; text-align: center;">Wilkes Barre, PA, 18711</span></a>
-        <a href="https://www.instagram.com/dualdragonkarate?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram fa-2xl"></i></a>
-        <a href="" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+        <a href="https://www.instagram.com/dualdragonkarate?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram icon" style="color:black"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61557089137420" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook icon" style="color: black;"></i></a>
         <a href="https://github.com/NateMartes" id="owner" target="_blank">Made By<span style="display: block; text-align: center;">Nathaniel Martes</span></a>
     </footer>
 </body>
