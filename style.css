@@ -2,6 +2,10 @@
 body {
     margin: 0;
 }
+body.blur > *:not(.hamburgerIconContents){
+    transition: all 1s;
+    filter: brightness(30%);
+}
 main {
     font-size: 25px;
     font-family: "Roboto Condensed", 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -15,7 +19,7 @@ p {
     line-height: 1.5;
     word-spacing: 2px;
 }
-/* navbar */
+
 .navbar {
     text-align: center;
     position: -webkit-sticky;
@@ -26,7 +30,7 @@ p {
 }
 .navbar ul{
     list-style-type: none;
-    background-color: #0062CA;
+    background-color: #0077F2;
     margin: 0;
     padding-top: 15px;
     padding-bottom: 5px;
@@ -36,9 +40,12 @@ p {
 .navbar li{
     display: block;
     font-family: "Bebas Neue",'Arial Narrow', sans-serif;
-    font-size: 25px;
-    padding-left: 15px;
+    font-size: 30px;
+    padding-left: 25px;
     float: left;
+}
+.navbar #navbarLogo{
+    padding-left: 10px;
 }
 .navbar a{
     text-decoration: none;
@@ -52,7 +59,65 @@ p {
 .navbar a:visited{
     color : #FFFFFF;
 }
+.navbar #navbarHamburger{
+    float: right;
+    padding-right: 10px;
+}
+.navbar #navbarHamburger button{
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.hamburgerIconContents{
+    background-color: #0077F2;
+    position: fixed;
+    top: 0;
+    right: -50%;
+    z-index: 1002;
+    min-width: 50%;
+    min-height: 100vh;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.showHamburgerContents{
+    right: 0;
+}
+.hamburgerIconContents #cancelBtn{
+    border: none;
+    background-color: transparent;
+    font-size: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #FFFFFF;
+}
+.hamburgerIconContents #anchors{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 80%;
+    align-items: center;
+    background-color: #FFFFFF;
+    row-gap: 3;
 
+}
+.hamburgerIconContents #anchors a{
+    font-size: 30px;
+    font-family: "Bebas Neue",'Arial Narrow', sans-serif;
+    background-color:#0077F2;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.hamburgerIconContents #anchors a:visited{
+    color: #FFFFFF;
+}
 /* main div */
 .mainDiv{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/StudentLineUp.avif");
@@ -75,8 +140,6 @@ p {
     margin: 0px;   
     height: fit-content;
 }
-
-/* Section */
 
 section {
     height: 40%;
@@ -128,7 +191,7 @@ section #content{
     align-items: center;
 }
 #aboutUs, #Instructors{
-    background-color: #0062CA;
+    background-color: #0077F2;
     color: #FFFFFF;
 }
 #Instructors{
@@ -190,7 +253,7 @@ footer a:hover{
     justify-content: center;
     align-items: center;
     margin: 40px;
-    background-color: #0062CA;
+    background-color: #0077F2;
     border-radius: 20px;
     padding: 20px;
     box-shadow: 5px 5px 30px black;
@@ -232,7 +295,7 @@ footer a:hover{
     color: #FFFFFF;
 }
 .hoursAndMap #icons .icon:hover{
-    color: #097bf4;
+    color: #0200F2;
 }
 table{
     padding-left: 20px;
@@ -243,7 +306,7 @@ table tr{
 }
 .emailUs{
     margin: 40px;
-    background-color: #0062CA;
+    background-color: #0077F2;
     border-radius: 20px;
     padding: 20px;
     box-shadow: 5px 5px 30px black;
@@ -328,7 +391,15 @@ table tr{
     justify-content: center;
     align-items: center;
 }
+@media screen and (min-width:1024px){
+    .navbar #navbarHamburger{
+        display: none;
+    }
+}
 @media screen and (max-width:1024px){
+    .navbar > ul > li:not(#navbarLogo):not(#navbarHamburger):not(#navbarContact):not(#contactNav){
+        display: none;
+    }
     .mainDiv p{
         font-size: 50px;
     }
@@ -365,7 +436,7 @@ table tr{
         align-items: center;
         text-align: center;
         padding: 0px;
-        margin: 10px;
+        margin: 20px;
     }
     .hoursAndMap div{
         min-width: 100%;
@@ -409,7 +480,7 @@ table tr{
         margin-bottom: 10px;
     }
     .emailUs{
-        margin: 10px;
+        margin: 20px;
     }
     .emailUs #emailForm label, .emailUs #emailForm input{
         font-size: 25px;

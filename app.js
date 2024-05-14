@@ -24,3 +24,10 @@ function scrollAnimation(event, element){
         behavior: "smooth"
     })
 }
+
+/* toggle  hamburger content */
+function hamburgerContentAnimation(){
+    const hamburgerContent = document.querySelector(".hamburgerIconContents");
+    hamburgerContent.classList.toggle("showHamburgerContents");
+
+}

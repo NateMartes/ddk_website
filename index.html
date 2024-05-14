@@ -14,17 +14,27 @@
     <title>Dual Dragon Karate</title>
     <meta name="theme-color" content="#0062CA">
 </head>
-<body style="background-color: #0062CA;">
+<body style="background-color: #0077F2;">
     <main>
         <nav class="navbar">
             <ul>
-                <li><a href="index.html"><img src="no.png" type="image/png" alt="Dual Dragon Karate Logo" width="32px" loading="lazy"/></a></li>
+                <li id="navbarLogo"><a href="index.html"><img src="no.png" type="image/png" alt="Dual Dragon Karate Logo" width="32px" loading="lazy"/></a></li>
                 <li><a id="aboutUsNav" href="#aboutUs" onclick="scrollAnimation(event, this)">About Us</a></li>
                 <li><a id="classesNav" href="#classes" onclick="scrollAnimation(event, this)">Classes</a></li>
                 <li><a id="instructorsNav" href="#Instructors" onclick="scrollAnimation(event, this)">Instructors</a></li>
-                <li><a id="contactNav" href="contact.html">Contact</a></li>
+                <li id="navbarContact"><a id="contactNav" href="contact.html">Contact</a></li>
+                <li id="navbarHamburger"><button onclick="hamburgerContentAnimation()"><i class="fa-solid fa-bars"></i></button></li>
             </ul>
         </nav>
+        <div class="hamburgerIconContents" id="hamburgerIconContents">
+            <button  id="cancelBtn" onclick="hamburgerContentAnimation()"><i class="fa-solid fa-xmark"></i></button>
+            <div id="anchors">
+                <a id="aboutUsNav" href="#aboutUs" onclick="hamburgerContentAnimation(),scrollAnimation(event, this)">About Us</a>
+                <a id="classesNav" href="#classes" onclick="hamburgerContentAnimation(),scrollAnimation(event, this)">Classes</a>
+                <a id="instructorsNav" href="#Instructors" onclick="hamburgerContentAnimation(),scrollAnimation(event, this)">Instructors</a>
+                <a id="contactNav" href="contact.html">Contact</a>
+            </div>
+        </div>
         <div class="mainDiv">
             <div>
                 <p>Dual Dragon Karate</p>

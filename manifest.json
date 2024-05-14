@@ -3,8 +3,8 @@
     "short_name": "DualDragonKarate",
     "start_url": "/index.html",
     "display": "standalone",
-    "background_color": "#0062CA",
-    "theme_color":"#0062CA",
+    "background_color": "#008AFB",
+    "theme_color":"#008AFB",
     "orientation":"portrait-primary",
     "icons":[
         {
