@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="We are a karate school with the goal of teaching others self defense, disciple, and having fun in the process.">
     <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="no.png">
     <script defer src="app.js"></script>
     <script defer src="inputValidation.js"></script>
     <script src="https://kit.fontawesome.com/2c9f162a99.js" crossorigin="anonymous"></script>
@@ -12,6 +13,15 @@
     <title>Dual Dragon Karate</title>
     <meta name="theme-color" content="#C0C0C0">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-22EB1X1WQH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-22EB1X1WQH');
+</script>
 <body style="background-color: #C0C0C0">
     <main>
         <nav class="navbar">
@@ -21,11 +31,11 @@
                 <li id="classesNav"><a href="index.html#classes">Classes</a></li>
                 <li id="instructorsNav"><a href="index.html#Instructors">Instructors</a></li>
                 <li id="contactNav"><a href="contact.html">Contact</a></li>
-                <li id="navbarHamburger"><button onclick="hamburgerContentAnimation()"><i class="fa-solid fa-bars"></i></button></li>
+                <li id="navbarHamburger"><button onclick="hamburgerContentAnimation()" name="navigation"><i class="fa-solid fa-bars"></i></button></li>
             </ul>
         </nav>
         <div class="hamburgerIconContents" id="hamburgerIconContents">
-            <button  id="cancelBtn" onclick="hamburgerContentAnimation()"><i class="fa-solid fa-xmark"></i></button>
+            <button  id="cancelBtn" onclick="hamburgerContentAnimation()" name="close navigation"><i class="fa-solid fa-xmark"></i></button>
             <div id="logo" style="margin: 5px;">
                 <img src="no.png" type="image/png" alt="Dual Dragon Karate Logo" width="48px" loading="lazy"/>
             </div>
