@@ -342,73 +342,6 @@ table tr{
     font-family: "Roboto Condensed", 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 30px;
 }
-.emailUs{
-    margin: 40px;
-    background-color: #0077F2;
-    border-radius: 20px;
-    padding: 20px;
-    box-shadow: 5px 5px 30px black;
-    color:#FFFFFF;
-}
-.emailUs #content h2{
-    font-family: "Bebas Neue",'Arial Narrow', sans-serif ;
-    font-weight: 400;
-    font-size: 50px;
-    margin: 20px;
-    margin-bottom: 30px;
-    text-decoration: underline;
-    text-underline-offset: 15px;
-}
-.emailUs #emailForm{
-    padding-left: 20px;
-    font-size: 30px;
-    font-family: "Roboto Condensed", 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-.emailUs #emailForm input{
-    margin: 10px;
-    margin-left: 20px;
-    font-size: 30px;
-    font-family: "Roboto Condensed", 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    width: 500px;
-    border: 2px solid;
-    border-radius: 5px;
-}
-.emailUs #emailForm #emailContents{
-    width: 800px;
-    height: 400px;
-    font-size: 30px;
-    font-family: "Roboto Condensed", 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    resize: none;
-    margin: 10px;
-    margin-left: 20px;
-    border: 2px solid;
-    border-radius: 5px;
-}
-.emailUs #emailForm #sendBtn{
-    margin: 10px;
-    margin-left: 20px;
-    width: 40%;
-    max-width: 150px;
-    padding-left: 20px;
-    padding-right: 20px;
-    height: 50px;
-    font-family: "Roboto Condensed", 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    font-size: 30px;
-    border: 2px solid;
-    color: black;
-    text-align: center;
-    border-radius: 5px;
-    background-color: #C0C0C0;
-    transition: background-color 0.2s;
-}
-.emailUs #emailForm #sendBtn:hover{
-    background-color: #FFFFFF;
-    cursor: pointer;
-}
-.emailUs #emailForm #sendBtn::after{
-    background-color: #C0C0C0;
-}
 .hidden{
     opacity: 0;
     filter: blur(5px);
@@ -505,25 +438,13 @@ table tr{
         margin: 0;
         margin-bottom: 10px;
     }
-    .hoursAndMap #locationHeader{
+    .hoursAndMap #locationHeader, .hoursAndMap #emailHeader, .hoursAndMap #connectHeader{
         margin-bottom: 20px;
     }
     .hoursAndMap iframe{
         max-width: 90%;
         height: 350px;
         margin-bottom: 10px;
-    }
-    .emailUs{
-        margin: 20px;
-    }
-    .emailUs #emailForm label, .emailUs #emailForm input{
-        font-size: 25px;
-    }
-    .emailUs #emailForm input{
-        width: 80%;
-    }
-    .emailUs #emailForm #emailContents{
-        width: 90%;
     }
 }
 @media screen and (max-width:1076px){
@@ -537,16 +458,13 @@ table tr{
     .hoursAndMap table{
         width: 100%; 
     }
-    .emailUs #emailForm{
-        padding: 0px;
-    }
 }
 @media screen and (max-width:424px){
     .navbar #instructorsNav{
         display: none;
     }
 }
-@media screen and (max-width:750px){
+@media screen and (max-width:720px){
     footer a, footer p{
         font-size: 13px;
     }
