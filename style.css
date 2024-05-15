@@ -147,7 +147,8 @@ p {
 }
 .cookiesInfo button{
     background-color: #C0C0C0;
-    border: solid 2px;
+    color: black;
+    border: solid 2px black;
     font-family: "Roboto Condensed", 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 15px;
     padding-top: 10px;
