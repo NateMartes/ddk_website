@@ -391,7 +391,9 @@ table tr{
 .emailUs #emailForm #sendBtn{
     margin: 10px;
     margin-left: 20px;
-    width: 20%;
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
     height: 50px;
     font-family: "Roboto Condensed", 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 400;
