@@ -2,13 +2,6 @@
 body {
     margin: 0;
 }
-body.blur{
-    transition: all 1s;
-    filter: brightness(30%);
-}
-.brighten{
-    filter: brightness(100%);
-}
 main {
     font-size: 25px;
     font-family: "Roboto Condensed", 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -79,13 +72,14 @@ p {
     top: 0;
     right: -100%;
     z-index: 1002;
-    min-width: 100%;
+    min-width: 50%;
     min-height: 100vh;
-    transition: all 0.5s;
+    transition: all 0.7s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: -1px -1px 20px black;
 }
 .showHamburgerContents{
     right: 0;
