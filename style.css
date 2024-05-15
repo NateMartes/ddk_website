@@ -391,7 +391,8 @@ table tr{
 .emailUs #emailForm #sendBtn{
     margin: 10px;
     margin-left: 20px;
-    width: max-content;
+    width: 40%;
+    max-width: 150px;
     padding-left: 20px;
     padding-right: 20px;
     height: 50px;
