@@ -17,13 +17,29 @@
         <nav class="navbar">
             <ul>
                 <li id="navbarContact"><a href="index.html"><img src="no.png" type="image/png" alt="Dual Dragon Karate Logo" width="32px" loading="lazy"/></a></li>
-                <li id="aboutUsNav"><a href="index.html">About Us</a></li>
-                <li id="classesNav"><a href="index.html">Classes</a></li>
-                <li id="instructorsNav"><a href="index.html">Instructors</a></li>
+                <li id="aboutUsNav"><a href="index.html#aboutUs">About Us</a></li>
+                <li id="classesNav"><a href="index.html#classes">Classes</a></li>
+                <li id="instructorsNav"><a href="index.html#Instructors">Instructors</a></li>
                 <li id="contactNav"><a href="contact.html">Contact</a></li>
-                <li id="navbarHamburger"><button onclick="showHamburgerContents()"><i class="fa-solid fa-bars"></i></button></li>
+                <li id="navbarHamburger"><button onclick="hamburgerContentAnimation()"><i class="fa-solid fa-bars"></i></button></li>
             </ul>
         </nav>
+        <div class="hamburgerIconContents" id="hamburgerIconContents">
+            <button  id="cancelBtn" onclick="hamburgerContentAnimation()"><i class="fa-solid fa-xmark"></i></button>
+            <div id="logo" style="margin: 5px;">
+                <img src="no.png" type="image/png" alt="Dual Dragon Karate Logo" width="48px" loading="lazy"/>
+            </div>
+            <div id="anchors">
+                <a id="aboutUsNav" href="index.html#aboutUs">About Us</a>
+                <a id="classesNav" href="index.html#classes">Classes</a>
+                <a id="instructorsNav" href="index.html#Instructors">Instructors</a>
+                <a id="contactNav" href="contact.html">Contact</a>
+            </div>
+            <div id="icons" style="display: flex; column-gap: 10px; margin: 20px;">
+                <a href="https://www.instagram.com/dualdragonkarate?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram icon" style="color: #FFFFFF; font-size: 48px;"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61557089137420" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook icon" style="color: #FFFFFF; font-size: 48px;"></i></a>
+            </div>
+        </div>
         <div class="hoursAndMap" style="overflow: hidden;">
             <div id="hours" class="hidden">
             <h2 id="hoursHeader">Hours Of Operation</h2>
