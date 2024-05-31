@@ -186,6 +186,8 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 section h2{
     font-family: "Bebas Neue",'Arial Narrow', sans-serif ;
@@ -264,6 +266,47 @@ section #content{
     text-underline-offset: 10px;
     font-family: "Bebas Neue",'Arial Narrow', sans-serif ;
     font-weight: 400;
+}
+#Images{
+    background-color: #C0C0C0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    min-width: 100%;
+    min-height: 100%;
+    
+}
+#ImageGallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 5%;
+    min-width: 100%;
+    min-height: 100%;
+}
+#ImageGallery i{
+    font-size: 48px;
+    cursor: pointer;
+}
+#ImagesInGallery{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+}
+#ImagesInGallery img{
+    margin: 0px;
+    width: 100%;
+    display: none;
+    background-color: #0077F2;
+}
+.slideBtn{
+    background-color: transparent;
+    border: transparent;
 }
 footer{
     background-color: #C0C0C0;
@@ -353,10 +396,6 @@ table tr{
     opacity: 1;
     filter: blur(0px);
     transform: translateX(0);
-}
-#imageGallery{
-    justify-content: center;
-    align-items: center;
 }
 @media screen and (min-width:1025px){
     .navbar #navbarHamburger{
@@ -457,6 +496,9 @@ table tr{
 @media screen and (max-width:500px){
     .hoursAndMap table{
         width: 100%; 
+    }
+    #ImageGallery i{
+        font-size: 24px;
     }
 }
 @media screen and (max-width:424px){
