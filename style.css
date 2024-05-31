@@ -302,11 +302,16 @@ section #content{
     margin: 0px;
     width: 100%;
     display: none;
-    background-color: #0077F2;
 }
 .slideBtn{
     background-color: transparent;
-    border: transparent;
+    border-color: transparent;
+    border: none;
+}
+.slideBtn #silderArrows{
+    color: #000000;
+    font-size: 48px;
+    cursor: pointer;
 }
 footer{
     background-color: #C0C0C0;
@@ -497,8 +502,8 @@ table tr{
     .hoursAndMap table{
         width: 100%; 
     }
-    #ImageGallery i{
-        font-size: 24px;
+    .slideBtn #silderArrows{
+        font-size: 30px;
     }
 }
 @media screen and (max-width:424px){
