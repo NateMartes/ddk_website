@@ -40,34 +40,3 @@ function setCookie(name, value, days) {
     }
     document.cookie = name + "=" + value + expires + "; path=/";
 }
-
-const sildeImgs = document.querySelectorAll("#ImagesInGallery img");
-let index = 0;
-initSilder();
-
-function initSilder(){
-    if (sildeImgs.length > 0){
-        sildeImgs[index].style.display = "block";
-        
-    }
-}
-function showSlide(){
-    if (index >= sildeImgs.length){
-        index = 0;
-    } else if (index < 0){
-        index = sildeImgs.length - 1;
-    }
-    sildeImgs.forEach((silde) => {
-        silde.style.display = "none";
-    });
-    sildeImgs[index].style.display = "block";
-}
-function prevSlide(){
-    index--;
-    showSlide();
-}
-function nextSlide(){
-    index++;
-    showSlide();
-    
-}
